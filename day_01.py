@@ -1,5 +1,5 @@
 def read_input_file():
-    with open('input/day_01_01.inp') as input:
+    with open('input/day_01.inp') as input:
         return [int(i.strip()) for i in input.readlines()]
 
 
