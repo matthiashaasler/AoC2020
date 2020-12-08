@@ -5,7 +5,7 @@ def read_input_file():
 
 def task_01(list_of_passwords):
     count_passwords = 0
-    for entry in list_of_passwords:
+    for entry in list_of_passwords :
         entry_list = entry.split()
         boundaries = entry_list[0].split('-')
         char = entry_list[1][0]
