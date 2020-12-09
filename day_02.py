@@ -1,9 +1,8 @@
-def read_input_file():
-    with open('input/day_02.inp') as input_list:
-        return [i.strip() for i in input_list.readlines()]
+from input.return_input import read_input_file
 
 
-def task_01(list_of_passwords):
+def task_01():
+    list_of_passwords = [i.strip() for i in read_input_file('input/day_02.inp')]
     count_passwords = 0
     for entry in list_of_passwords :
         entry_list = entry.split()
@@ -20,7 +19,8 @@ def task_01(list_of_passwords):
     return count_passwords
 
 
-def task_02(list_of_passwords):
+def task_02():
+    list_of_passwords = [i.strip() for i in read_input_file('input/day_02.inp')]
     count_passwords = 0
     for entry in list_of_passwords:
         entry_list = entry.split()
@@ -35,5 +35,5 @@ def task_02(list_of_passwords):
 
 
 if __name__ == '__main__':
-    solution_01 = task_01(list_of_passwords=read_input_file())
-    solution_02 = task_02(list_of_passwords=read_input_file())
+    solution_01 = task_01()
+    solution_02 = task_02()
