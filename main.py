@@ -2,8 +2,7 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-import day_01
-import day_02
+from days import day_01, day_02
 
 
 def print_solutions(day, task_01, task_02):
